@@ -38,14 +38,14 @@ html, body {
             margin-left: 60px;  /* Aligns left instead of center */
         }
 
-        /* Forces photos to be perfectly square and responsive */
+        /* Allow each cropped photo to keep its natural proportions */
         .square-photo {
-            flex: 1;            /* Gives both photos equal width */
-            width: 100%;        /* Allows responsiveness */
-            aspect-ratio: 1 / 1;/* Forces a perfect 1:1 square ratio */
-            object-fit: contain;/* Scales image to fit without cropping */
-            background-color: #fff; /* Optional: adds white background if needed */
-            border-radius: 8px; /* Optional: adds slightly rounded corners */
+            flex: 1;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            background-color: #fff;
+            border-radius: 8px;
         }
 
 /* ==========================================================================
