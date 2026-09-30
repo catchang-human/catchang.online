@@ -38,13 +38,12 @@ html, body {
             margin-left: 60px;  /* Aligns left instead of center */
         }
 
-        /* Allow each cropped photo to keep its natural proportions */
+        /* Display images at natural size without background */
         .square-photo {
             flex: 1;
             width: 100%;
             height: auto;
-            object-fit: cover;
-            background-color: #fff;
+            object-fit: contain;
             border-radius: 8px;
         }
 
