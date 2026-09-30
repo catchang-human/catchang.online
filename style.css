@@ -26,7 +26,7 @@ html, body {
 /* Utilities */
 .container {
     width: 100%;
-    max-width: 343px;
+    max-width: 626px;
     margin-left: 60px;
     align-items: left;
 }
@@ -34,7 +34,7 @@ html, body {
  .image-container {
             display: flex;
             gap: 15px;          /* Spacing between the photos */
-            max-width: 800px;   /* Limits maximum row width */
+            max-width: 626px;   /* Limits maximum row width */
             margin: 0 auto;     /* Centers the container on the page */
         }
 
@@ -163,5 +163,22 @@ footer {
 
     .hero h1 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 626px) {
+    .container {
+        max-width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .image-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .square-photo {
+        width: 100%;
     }
 }
