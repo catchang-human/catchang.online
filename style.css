@@ -23,6 +23,10 @@ html, body {
     align-items: left;
 }
 
+body {
+    margin-top: 72px;
+}
+
 /* Utilities */
 .container {
     width: 100%;
