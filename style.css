@@ -43,7 +43,8 @@ html, body {
             flex: 1;            /* Gives both photos equal width */
             width: 100%;        /* Allows responsiveness */
             aspect-ratio: 1 / 1;/* Forces a perfect 1:1 square ratio */
-            object-fit: cover;  /* Crops the image to fit without stretching */
+            object-fit: contain;/* Scales image to fit without cropping */
+            background-color: #fff; /* Optional: adds white background if needed */
             border-radius: 8px; /* Optional: adds slightly rounded corners */
         }
 
@@ -176,6 +177,8 @@ footer {
     .image-container {
         flex-direction: column;
         max-width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .square-photo {
