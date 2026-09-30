@@ -35,7 +35,7 @@ html, body {
             display: flex;
             gap: 15px;          /* Spacing between the photos */
             max-width: 626px;   /* Limits maximum row width */
-            margin: 0 auto;     /* Centers the container on the page */
+            margin-left: 60px;  /* Aligns left instead of center */
         }
 
         /* Forces photos to be perfectly square and responsive */
